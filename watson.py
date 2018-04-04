@@ -7,10 +7,10 @@ from watson_developer_cloud import PersonalityInsightsV2 as PersonalityInsights
 
 def analyze(handle):
 
-    twitter_consumer_key = '9VSguSseAFetKCYzWONhaWD4b'
-    twitter_consumer_secret = 'uFhK6cLddaeokNt2r65vXiLTQLfwLsYi7btnjVS37db2lQkQAH'
-    twitter_access_token = '980916831358783488-NwtW6sAIql66zbxKEphFWWBa8MVCZXa'
-    twitter_access_secret = '1UBtANdCVCVVcNb9R84YFPjGJDiKpzIZh3vkgdwGQ5SPc'
+    twitter_consumer_key = ''
+    twitter_consumer_secret = ''
+    twitter_access_token = ''
+    twitter_access_secret = ''
 
     twitter_api = twitter.Api(consumer_key=twitter_consumer_key,
                   consumer_secret=twitter_consumer_secret,
@@ -25,8 +25,8 @@ def analyze(handle):
         if (s.lang =='en'):
             text += s.text.encode('utf-8')
 
-    pi_username = '8363e7d3-be33-413b-9946-5591356c676f'
-    pi_password = 'l5IsZA4g0hOH'
+    pi_username = ''
+    pi_password = ''
 
     personality_insights = PersonalityInsights(username=pi_username,password=pi_password)
 
